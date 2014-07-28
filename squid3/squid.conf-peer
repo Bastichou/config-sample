@@ -1,0 +1,8 @@
+#Specific configuration file for bpx-lnx-px-04
+#For each configuration option specific to px-04 you have to edit /etc/squid3/squid.conf-peer
+
+visible_hostname squid
+acl cache_peer_dst dst 192.168.21.27
+acl cache_peer_src src 192.168.21.26
+cache_peer 192.168.21.27 sibling 3128 3130 proxy-only
+
